@@ -13,7 +13,7 @@ body {
     font-family: serif
         /* Ubuntu, sans-serif */
     ;
-    color: rgb(182, 100, 237)
+    color: cornflowerblue
         /* #xxxxxx */
     ;
 }
@@ -28,7 +28,7 @@ h1 {
     font-size: 50px
         /* x.xrem  (rem is a unit of measure) */
     ;
-    color: rgb(213, 153, 248)
+    color: aqua
         /* #xxxxxx */
     ;
 }
