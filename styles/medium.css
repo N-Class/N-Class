@@ -1,0 +1,21 @@
+@media only screen and (min-width: 32.5em) {
+
+    h1 {
+
+        font-size: 50px
+            /* x.xrem  (rem is a unit of measure) */
+        ;
+        color: aqua
+            /* #xxxxxx */
+        ;
+    }
+
+    h2 {
+        font-size: 30px
+            /* x.xrem */
+        ;
+        text-align: center;
+        border-bottom: 1px solid #bbb;
+    }
+
+}
