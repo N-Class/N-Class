@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-bottom: .9em;
+
+}
+
+body {
+
+    text-align: center;
+
+}
+
+main {
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+h1 {
+
+    font-size: 5em;
+    font-family: 'Bangers', cursive;
+}
+
+h2 {
+
+    font-size: 3em;
+    font-family: 'Bangers', cursive;
+    padding-top: .5em;
+}
+
+img {
+
+    padding-bottom: 1em;
+
+}
+
+p {
+
+    font-size: 1em;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+section {
+
+    border-radius: round;
+    border: 1px solid darkgray;
+    background-color: lightgray;
+
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1.3em;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+a {
+    color: rgb(0, 145, 145);
+}
+
+footer {
+    color: white;
+    background-color: black;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+/* Tablet view */
+@media only screen and (min-width: 37.5em) {
+
+    main {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    section:nth-child(3) {
+
+        grid-column: span 2;
+
+    }
+
+
+}
+
+/* Desktop view */
+@media only screen and (min-width: 60em) {
+
+    main {
+
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    section:nth-child(3) {
+
+        grid-column: span 1;
+
+    }
+
+
+}
