@@ -7,6 +7,12 @@
     box-sizing: border-box;
 }
 
+p {
+
+    font-size: 1.3em;
+
+}
+
 body {
 
     background-color: #76C3FF;
