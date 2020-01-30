@@ -1,0 +1,26 @@
+@media only screen and (min-width: 37em) {
+
+    h1 {
+
+        font-size: 50px
+            /* x.xrem  (rem is a unit of measure) */
+        ;
+
+    }
+
+    h2 {
+        font-size: 30px
+            /* x.xrem */
+        ;
+
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+}
