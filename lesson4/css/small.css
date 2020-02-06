@@ -1,0 +1,123 @@
+/* CIT 230 - Assignment Portal CSS Template */
+/* You may use #HEX or color names */
+
+/* * is a wildcard referring to all elements. */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: auto;
+    width: 100%;
+    padding: 5px;
+
+}
+
+div {
+
+    background-color: #316C99;
+
+}
+
+img {
+    max-width: 50px;
+    float: left;
+    padding-top: 12px;
+
+}
+
+p,
+div,
+nav {
+
+    font-size: 1em;
+    font-family: 'Lato', sans-serif;
+
+}
+
+h1 {
+
+    font-size: 30px
+        /* x.xrem  (rem is a unit of measure) */
+    ;
+    font-family: 'Roboto', sans-serif;
+    color: #FFF56D;
+}
+
+h2 {
+    font-size: 20px
+        /* x.xrem */
+    ;
+    font-family: 'Roboto', sans-serif;
+    color: #FFF56D;
+}
+
+footer {
+    display: block;
+    margin: 10px;
+    background-color: #FFF23C;
+    text-align: center;
+    font-size: .8em;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.boxes {
+    display: block;
+    margin: 10px;
+    border: 1px dashed #000;
+    padding: 15px;
+    background-color: #eee;
+    color: #444;
+
+}
+
+nav button {
+
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #9E9514;
+
+}
+
+nav {
+    background-color: #FFF23C;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    border-top: 1px solid rgb(0, 0, 0, 0.3);
+}
+
+nav a:hover {
+    background-color: #EEE241;
+    color: #FF3C5B;
+}
+
+nav ul.hide {
+
+    display: none;
+
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
