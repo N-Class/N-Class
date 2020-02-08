@@ -1,15 +1,15 @@
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 70em) {
 
     h1 {
 
-        font-size: 40px
+        font-size: 50px
             /* x.xrem  (rem is a unit of measure) */
         ;
 
     }
 
     h2 {
-        font-size: 25px
+        font-size: 30px
             /* x.xrem */
         ;
 
@@ -17,13 +17,13 @@
 
     img {
 
-        max-width: 75px;
+        max-width: 100px;
 
     }
 
     p {
 
-        font-size: 1.15em;
+        font-size: 1.3em;
 
     }
 
