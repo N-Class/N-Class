@@ -18,6 +18,10 @@
 
 <body>
     <header>
+        <div id="colord">
+            <h2 style="text-align: center;">Saturday = Preston Pancakes in the Park!<br>
+                9:00 a.m. Saturday at the City Park.</h2>
+        </div>
         <img src="images/logo.png" alt="logo">
         <h1>WeatherNow</h1>
     </header>
@@ -32,12 +36,46 @@
 
     </nav>
     <main>
-        <h2 style="text-align: center;">Preston Idaho</h2>
-        <div class="boxes">Hero w/ weather summary</div>
-        <div class="boxes">5 Day Forecast</div>
-        <div class="boxes">Article</div>
-        <div class="boxes">Contact Information</div>
+
         <p>
+
+            <h2 style="text-align: center;">Preston Idaho</h2>
+            <figure>
+                <img src="images/banner.png" alt="nice warm weather" id="bnr" srcset="images/banner.png 300w,
+                images/banner.png 600w,
+                images/banner.png 1200w,
+                
+                ">
+
+            </figure>
+            <div class="herodiv">
+                <section class="stats">
+                    <h2 id="color2" style="text-decoration: underline;">Weather Summary</h2>
+                    <p>Currently: <span id="gender">Sunny</span></p>
+                    <p>High: <span id="age">76 F</span></p>
+                    <p>Wind Chill: <span id="shots">F</span></p>
+                </section>
+            </div>
+
+            <div id="dv">
+<figure>
+                <img src="images/verticle.png" alt="summer" id="vrtcl" srcset="
+                images/verticle.png 200w,
+                images/verticle.png 400w,
+                images/verticle.png 800w,
+                images/verticle.png 1200w,
+                "
+                
+                >
+</figure>
+            </div>
+
+            <div class="boxes">Hero w/ weather summary</div>
+            <div class="boxes">5 Day Forecast</div>
+            <div class="boxes">Article</div>
+            <div class="boxes">Contact Information</div>
+
+
 
         </p>
     </main>
@@ -45,6 +83,14 @@
         <p>©WeatherNow|Attributions|Oscar Corrales|Wednesday,5 Feb 2020</p>
     </footer>
     <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>WebFont.load({
+        google: {
+          families: [
+             'fontfamilynameofyourchoice'
+          ]
+        }
+      });</script>
 </body>
 
 </html>
