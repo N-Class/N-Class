@@ -1,0 +1,43 @@
+@media only screen and (min-width: 70em) {
+
+    h1 {
+
+        font-size: 50px
+            /* x.xrem  (rem is a unit of measure) */
+        ;
+
+    }
+
+    h2 {
+        font-size: 30px
+            /* x.xrem */
+        ;
+
+    }
+
+    p {
+
+        font-size: 1.3em;
+
+    }
+
+    .navigation a {
+        border-top: none;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        /* needed because of state in small view */
+        flex: 1 1 100%;
+        border-right: 1px solid rgb(0, 0, 0, 0.3);
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+}
