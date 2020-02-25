@@ -1,6 +1,4 @@
-main img[data-src] {
-    filter: blur(0.2em);
-}
+main img:hover {box-shadow: 0 0 50px #333;}
 
 main img {
     filter: blur(0em);
