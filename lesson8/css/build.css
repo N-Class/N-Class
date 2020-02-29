@@ -8,6 +8,12 @@ h1 {
     font-family: 'Ubuntu', sans-serif;
 }
 
+table {
+
+box-shadow: 10px 15px 13px #628ca6;
+
+}
+
 tr {
 
     background-color: #e7f0ed;
