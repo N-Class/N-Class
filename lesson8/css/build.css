@@ -1,0 +1,21 @@
+table,
+th,
+td,
+h1 {
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    padding: 8px;
+    font-family: Ubuntu, sans-serif;
+}
+
+tr {
+
+    background-color: #e7f0ed;
+
+}
+
+tr:nth-child(even) {
+
+    background-color: #e7ffed;
+
+}
