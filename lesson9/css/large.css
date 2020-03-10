@@ -1,0 +1,65 @@
+@media only screen and (min-width: 70em) {
+
+    h1 {
+
+        font-size: 50px
+            /* x.xrem  (rem is a unit of measure) */
+        ;
+
+    }
+
+    h2 {
+        font-size: 30px
+            /* x.xrem */
+        ;
+
+    }
+
+    p {
+
+        font-size: 1.3em;
+
+    }
+
+    .navigation a {
+        border-top: none;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        /* needed because of state in small view */
+        flex: 1 1 100%;
+        border-right: 1px solid rgb(0, 0, 0, 0.3);
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    main figure:hover {
+        box-shadow: 0 0 50px #333;
+    }
+
+    main figure {
+        max-width: 400px;
+        filter: blur(0em);
+        transition: filter 0.5s;
+    }
+
+    #container {
+        margin: 1em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+    }
+
+}
