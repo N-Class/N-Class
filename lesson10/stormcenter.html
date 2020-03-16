@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Storm Center</title>
+    <meta name="description" content=" ... ">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="colord">
+            <h2 style="text-align: center;">Saturday = Preston Pancakes in the Park!<br>
+                9:00 a.m. Saturday at the City Park.</h2>
+        </div>
+        <picture id="lgo">
+            <source srcset="images/logo50.png" media="(max-width: 35em)">
+            <source srcset="images/logo70.png" media="(max-width: 70em)">
+            <img src="images/logo100.png" alt="logo">
+        </picture>
+        <h1>WeatherNow</h1>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="menu" href="#">&#9776;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston-10.html">Preston</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+
+    </nav>
+    <main>
+        <h1 style="color: #316C99; text-align: center;">Storm Center</h1>
+        <form method="GET" action="thanks.html">
+            <fieldset>
+
+                <legend>Your Information</legend>
+                <label class="top"> First Name* <input type="text" name="fname" required></label>
+                <label class="top"> Last Name* <input type="text" name="lname" required></label>
+                <label class="top"> Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                        required></label>
+                <label class="top"> Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top"> Zipcode* <input type="number" name="zip" required></label>
+
+            </fieldset>
+            <fieldset>
+
+                <legend>Storm Information</legend>
+
+                <label class="top">Storm Date <input type="date" name="completeDate"></label>
+                <label class="top">Storm Type <input list="stormTypes">
+
+                    <datalist id="stormTypes">
+
+                        <option value="Flash Flood"></option>
+                        <option value="hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+
+                    </datalist>
+
+                </label>
+
+
+                <label class="t">Storm Severity <span class="rangeslider">
+                        <input type="range" min="1" max="10" value="10" class="myslider" id="sliderRange">
+                        <span id="demo"></span>
+                </span> </label>
+
+
+                <label class="top">Storm Region
+                    <select name="subject">
+
+                        <option value="">Select Region &#9662;</option>
+                        <option value="preston">Preston</option>
+                        <option value="soda">Soda Springs</option>
+                        <option value="fish">Fish Haven</option>
+
+                    </select>
+                </label>
+
+                <div>User in-danger level</div>
+                <label class="sbs"><input type="radio" name="user" value="yes"> Yes</label>
+                <label class="sbs"><input type="radio" name="user" value="maybe"> Maybe</label>
+                <label class="sbs"><input type="radio" name="user" value="no"> No</label>
+
+            </fieldset>
+            <fieldset>
+
+                <legend>Additional Information or Comments</legend>
+
+                <label class="top">Please provide any additional information here <textarea name="comments"
+                        id="addcomments" cols="35" rows="8">
+
+                </textarea></label>
+
+            </fieldset>
+
+            <input type="submit" value="Report this storm" class="submitBtn">
+
+        </form>
+
+
+
+    </main>
+    <footer>
+        <p>©WeatherNow|Attributions|Oscar Corrales|Wednesday,5 Feb 2020</p>
+    </footer>
+    <script src="js/extsjs.js" defer></script>
+    <script src="js/scripts.js" defer></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Lato',
+                    'Roboto'
+                ]
+            }
+        });
+    </script>
+    <script>
+        var rangeslider = document.getElementById("sliderRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = rangeslider.value;
+
+        rangeslider.oninput = function () {
+            output.innerHTML = this.value;
+        }
+    </script>
+</body>
+
+</html>
