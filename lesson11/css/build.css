@@ -1,0 +1,27 @@
+table,
+th,
+td,
+h1 {
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    padding: 8px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+table {
+
+box-shadow: 10px 15px 13px #628ca6;
+
+}
+
+tr {
+
+    background-color: #e7f0ed;
+
+}
+
+tr:nth-child(even) {
+
+    background-color: #e7ffed;
+
+}

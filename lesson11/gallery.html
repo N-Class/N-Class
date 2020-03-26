@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery</title>
+    <meta name="description" content=" ... ">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="colord">
+            <h2 style="text-align: center;">Saturday = Preston Pancakes in the Park!<br>
+                9:00 a.m. Saturday at the City Park.</h2>
+        </div>
+        <picture id="lgo">
+            <source srcset="images/logo50.png" media="(max-width: 35em)">
+            <source srcset="images/logo70.png" media="(max-width: 70em)">
+            <img src="images/logo100.png" alt="logo">
+        </picture>
+        <h1>WeatherNow</h1>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="menu" href="#">&#9776;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston-11.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+
+    </nav>
+    <main>
+        <h1 style="color: black; text-align: center;">Weather Gallery</h1>
+        <div id="container">
+            <figure>
+                <img src="img/placeholder1.png" data-src="img/clear.jpg" alt="clear skies">
+                <figcaption style="padding: 1em;">No signs of clouds anywhere! Great day for a picnic!</figcaption>
+            </figure>
+            <figure>
+                <img src="img/placeholder1.png" data-src="img/cloudy.jpg" alt="cloudy">
+                <figcaption style="padding: 1em;">Looks like it's going to rain soon.</figcaption>
+            </figure>
+            <figure>
+                <img src="img/placeholder1.png" data-src="img/fall.jpg" alt="fall, nice weather">
+                <figcaption style="padding: 1em;">Lots of leaves during this season,
+                    <br>but the weather's good for relaxing after cleanup.</figcaption>
+            </figure>
+            <figure>
+                <img src="img/placeholder1.png" data-src="img/lightning.jpg" alt="lightning">
+                <figcaption style="padding: 1em;">Intense storms are comming, please stay in your homes.</figcaption>
+            </figure>
+            <figure>
+                <img src="img/placeholder1.png" data-src="img/partcloud.jpg" alt="partly clouded">
+                <figcaption style="padding: 1em;">Many clouds, but no rain. Make sure to have fun.</figcaption>
+            </figure>
+            <figure>
+                <img src="img/placeholder1.png" data-src="img/rain.jpg" alt="rain">
+                <figcaption style="padding: 1em;">It's going to rain this Friday!</figcaption>
+            </figure>
+            <figure>
+                <img src="img/placeholder1.png" data-src="img/rainy.jpg" alt="nature">
+                <figcaption style="padding: 1em;">It's going to rain even more on Saturday;
+                    <br>make sure to bring an umbrella!</figcaption>
+            </figure>
+            <figure>
+                <img src="img/placeholder1.png" data-src="img/snowy.jpg" alt="snowy">
+                <figcaption style="padding: 1em;">Be careful when driving,
+                    <br>there will be lots of snow this afternoon!</figcaption>
+            </figure>
+            <figure>
+                <img src="img/placeholder1.png" data-src="img/sunset.jpg" alt="sunset">
+                <figcaption style="padding: 1em;">There will be a beautiful sunset at 8:00 p.m.
+                    <br>Don't miss it!</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>©WeatherNow|Attributions|Oscar Corrales|Wednesday,5 Feb 2020|Credits: API: OpenWeatherMap</p>
+    </footer>
+    <script src="js/extsjs.js" defer></script>
+    <script src="js/scripts.js" defer></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Lato',
+                    'Roboto'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>
