@@ -1,7 +1,37 @@
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&APPID=ce5a0604d930f50913f80088834bcd95"
 const fcUrl = 'https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&APPID=ce5a0604d930f50913f80088834bcd95'
+const tdURL = "https://byui-cit230.github.io/weather/data/towndata.json"
 
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+
+
+fetch(tdURL)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+        console.table(jsonObject); // temporary checking for valid response and data parsing
+        const towns = jsonObject['towns'];
+
+
+        for (let i = 0; i < towns.length; i++) {
+            if (towns[i].name == "Soda Springs") {
+
+                let evnt = document.createElement('section');
+                let h3 = document.createElement('h3');
+                let div1 = document.createElement('div');
+
+                h3.textContent = 'CITY EVENTS';
+                div1.textContent = towns[i].events;
+
+                evnt.appendChild(h3);
+                evnt.appendChild(div1);
+
+                document.querySelector('div.evnts').appendChild(evnt);
+            }
+
+        }
+    });
 
 function capitalizeFLetter(str) {
     if (str.includes(' ')) {
