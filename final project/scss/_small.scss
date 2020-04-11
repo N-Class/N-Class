@@ -1,0 +1,243 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* body rules */
+body {
+    font-family: $fontFamily;
+    font-size: 16px;
+    font-weight: $regularWeight;
+}
+
+header {
+    background-color: $color1;
+    padding: 1rem $gutter;
+
+    #lgo {
+        display: block;
+        float: left;
+        padding-top: -10px;
+        margin: 0 2%;
+    }
+
+    h1 {
+        color: $color2;
+        font-weight: $heavyWeight;
+        padding-top: .6em;
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+
+    //end of h1
+
+
+}
+
+//end of header
+
+
+nav {
+    background-color: $color2;
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    a {
+        display: block;
+        padding: .8rem 0;
+        /*44px min*/
+        color: #eee;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    //end of a
+    a:hover {
+        background-color: #444;
+    }
+}
+
+.menu {
+
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #40156B;
+
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+
+    li:first-child {
+        display: block;
+    }
+
+    li {
+        display: none;
+    }
+
+    a {
+        display: block;
+        padding: 0.75rem;
+        text-decoration: none;
+        border-top: 1px solid #40156B;
+    }
+
+    a:hover {
+        background-color: #EEE241;
+        color: #FF3C5B;
+    }
+}
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+.responsive li {
+    display: block;
+}
+
+
+//end of nav
+
+main {
+    .herodiv {
+        width: 20em;
+        position: relative;
+        float: right;
+        font-family: $fontFamily;
+        color: #40156B;
+        font-weight: $heavyWeight;
+
+    }
+
+    .stats {
+        position: absolute;
+        top: 25px;
+        right: 50px;
+        background: radial-gradient(rgba(238, 238, 238, 0.671), #FFC16D);
+        border: 1px solid #000;
+        padding: 1.5rem;
+        opacity: .8;
+    }
+
+    h2 {
+
+        color: #A44BFF;
+
+    }
+
+    display: block;
+    padding: .5em;
+
+    h1 {
+        color: $color1;
+        font-weight: $heavyWeight;
+    }
+
+    figure {
+        margin: 2%;
+        padding: .2em;
+    }
+
+    #item1 {
+        grid-area: one;
+        padding-top: 15px;
+    }
+
+    #item2 {
+        grid-area: two;
+    }
+
+    #item3 {
+        grid-area: three;
+    }
+
+    #item4 {
+        grid-area: four;
+    }
+
+    #item5 {
+        grid-area: five;
+    }
+
+    #item6 {
+        grid-area: six;
+    }
+
+    #item7 {
+        grid-area: seven;
+    }
+
+    #item8 {
+        grid-area: eight;
+    }
+
+    #container {
+        display: grid;
+        grid-template-areas:
+            'one'
+            'two'
+            'three'
+            'four'
+            'five'
+            'six'
+            'seven'
+            'eight';
+        grid-gap: 105px;
+        padding: 15px;
+    }
+
+    //applies to home
+
+    #maindv {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+
+    }
+
+    .dv {
+        display: block;
+        font-weight: $heavyWeight;
+        background-color: #BB78FF;
+        border: solid 8px #A44BFF;
+        padding: 10px;
+        margin: 2%;
+        max-width: 15em;
+    }
+}
+
+//end of main
+
+
+
+footer {
+    background-color: $color1;
+    text-align: center;
+    padding: 1rem $gutter;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

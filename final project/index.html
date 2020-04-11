@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <title>Salmon River Adventures</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,700;1,300&display=swap"
+    rel="stylesheet">
+
+
+  <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+  <!-- STYLE SHEETS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="css/styles.css" rel="stylesheet">
+
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+
+
+</head>
+
+<body>
+  <header>
+    <picture id="lgo">
+      <source srcset="images/logo50.png" media="(max-width: 35em)">
+      <source srcset="images/logo70.png" media="(max-width: 70em)">
+      <img src="images/logo100.png" alt="logo">
+    </picture>
+    <h1>Salmon River Adventures</h1>
+  </header>
+
+  <nav class="clearfix">
+    <ul class="navigation">
+      <li><a class="menu" href="#">&#9776;</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="activities.html">Activities</a></li>
+      <li><a href="river guide.html">River Guide</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <div class="herodiv">
+      <section class="stats">
+        <h2 style="text-decoration: underline;">Weather Summary</h2>
+        <p>Currently: <span id="currently"></span></p>
+        <p>High: <span id="high"></span>&deg;F</p>
+        <p>Wind Chill: <span id="wc"></span>&deg;F</p>
+        <p>Humidity: <span id="humidity"></span>%</p>
+        <p>Wind-Speed: <span id="wind-speed"></span>mph</p>
+      </section>
+    </div>
+
+    <div id="container">
+      <figure id="item1">
+        <img src="images/placeholder2.png" data-src="images/kayak1.png" alt="kayak1">
+      </figure>
+      <figure id="item2">
+        <img src="images/placeholder1.png" data-src="images/salmon.png" alt="salmon">
+      </figure>
+      <figure id="item3">
+        <img src="images/placeholder1.png" data-src="images/raft1.png" alt="raft1">
+      </figure>
+      <figure id="item4">
+        <img src="images/placeholder1.png" data-src="images/raft2.png" alt="raft2">
+      </figure>
+      <figure id="item5">
+        <img src="images/placeholder1.png" data-src="images/kayak2.png" alt="kayak2">
+      </figure>
+      <figure id="item6">
+        <img src="images/placeholder1.png" data-src="images/sand.png" alt="People with chairs on sand">
+      </figure>
+      <figure id="item7">
+        <img src="images/placeholder1.png" data-src="images/raft3.png" alt="raft3">
+      </figure>
+      <figure id="item8">
+        <img src="images/placeholder1.png" data-src="images/kayak3.png" alt="kayak3">
+      </figure>
+      </figure>
+    </div>
+
+
+  </main>
+
+  <footer>
+    &copy; Oscar Corrales 2020
+  </footer>
+  <script src="js/scripts.js"></script>
+  <script src="js/rigapi.js"></script>
+  <script src="js/wc.js"></script>
+  <script src= "js/extsjs.js"></script>
+</body>
+
+</html>

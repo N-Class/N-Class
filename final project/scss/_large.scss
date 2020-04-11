@@ -1,0 +1,53 @@
+header,
+nav,
+main,
+footer {
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+header h1 {
+    padding-top: 1.4em;
+    margin-bottom: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    padding-left: $gutter;
+}
+
+nav li {
+    width: auto;
+}
+
+nav a {
+    padding: .5rem 1rem;
+}
+
+main {
+    #item1 { grid-area: one; 
+    padding-top: 15px;
+    }
+    #item2 { grid-area: two;
+    margin-left: 5px;
+    margin-bottom: 0px; }
+    #item3 { grid-area: three; }
+    #item4 { grid-area: four; }
+    #item5 { grid-area: five; }
+    #item6 { grid-area: six; }
+    #item7 { grid-area: seven; }
+    #item8 { grid-area: eight; }
+    
+    #container {
+      display: grid;
+      grid-template-areas:
+        'one two two two'
+        'one three four five'
+        'one six seven eight';
+      grid-gap: 105px;
+      padding-bottom: 10px;
+    } //applies to home
+    
+    
+    }

@@ -1,0 +1,22 @@
+[{
+        "name": "Tom Tom",
+        "Certification": "Bachelor's Degree",
+        "Experience": "10 Years",
+        "Email": "tomsalm@mail.com",
+        "Bio": "Meet Tom. Tom is the one who manages our site. He updates the site every day. If you see any new features on the site, he would be the one who impliments it."
+    },
+    {
+        "name": "Susan Stone",
+        "Certification": "Associates' Degree",
+        "Experience": "13 Years",
+        "Email": "stonesalm@mail.com",
+        "Bio": "Meet Susan. She handles reservations. Feel free to contact her if you need to change your dates."
+    },
+    {
+        "name": "Aki Lee",
+        "Certification": "Bachelor's Degree",
+        "Experience": "5 Years",
+        "Email": "akisalm@mail.com",
+        "Bio": "This is Aki. You might see him around the site. He is in charge of life-gaurds. He might be the one to give you instructions on safety in the lake."
+    }
+]
