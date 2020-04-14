@@ -117,6 +117,17 @@ nav {
 //end of nav
 
 main {
+    button {
+
+        border: none;
+        background-color: #FFAD3C;
+        color: white;
+        margin-top: -8px;
+        padding: .7em;
+        margin-left: 40%;
+        width: 20%;
+
+    }
     .herodiv {
         width: 20em;
         position: relative;
@@ -147,7 +158,7 @@ main {
     padding: .5em;
 
     h1 {
-        color: $color1;
+        color: $color2;
         font-weight: $heavyWeight;
     }
 
@@ -275,6 +286,86 @@ main {
         width: 25%;
 
     }
+
+    /*-------------- FORM ---------------*/
+
+    form {
+        font-family: $fontFamily;
+        max-width: 35%;
+
+        legend {
+            color: $color2;
+            margin: 0 1em;
+            padding: 0 .5em;
+            font-size: 1.5em;
+        }
+
+        fieldset {
+
+            margin: 2rem 0;
+            border: 3px solid $color2;
+            border-radius: 10px;
+            padding: .5em 2%;
+            padding-bottom: 5%;
+
+        }
+
+        label.top input:required {
+
+            border-left: #FF3C5B solid 6px;
+
+        }
+
+        label.top input:required:valid {
+
+            border-left: $color1 solid 6px;
+
+        }
+
+        label.top,
+        div {
+            display: block;
+            padding-top: 1em;
+            color: #518E12;
+            font-size: 1.2em;
+
+        }
+
+
+
+        label.top input,
+        label.top select {
+
+            -webkit-appearance: none;
+            display: block;
+            font-size: 1em;
+            border: solid 1px #999;
+            border-radius: 4px;
+            padding: .75em;
+            color: #555;
+            background-color: rgba(0, 0, 0, 0.1);
+
+        }
+
+
+
+        input.submit {
+
+            border: none;
+            background-color: #FFAD3C;
+            color: white;
+            padding: .75em 1.5em;
+            margin: 0 0 2em 2%;
+            width: 96%;
+            max-width: 20em;
+
+        }
+    }
+
+
+
+    //applies to reservations
+
 }
 
 //end of main
@@ -286,12 +377,6 @@ footer {
     padding: 1rem $gutter;
     position: relative;
     bottom: -20px;
-}
-
-#con {
-
-    margin-top: 200px;
-
 }
 
 

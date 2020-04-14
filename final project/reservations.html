@@ -64,12 +64,10 @@
                             <div>
                                 <p>Length: 7hrs<br><br>
                                     Skill level: beginner<br><br>
-                                    Cost: 180$ a person<br><br>
-                                    We fish out in boats.
-                                    We supply all rods, tackle, and bait.
-                                    You provide your lunch,
-                                    but we can also provide
-                                    lunch for 5$ a person.
+                                    Cost: $180 a person<br><br>
+                                    We are ready to take you out on our marvelous and fish.
+                                    You don't have to bring equipment, the equipment is included.
+                                    You can choose to bring your lunch, but we can also provide it for $5 a person.
                                 </p>
                             </div>
                         </td>
@@ -102,6 +100,48 @@
             </table>
 
         </div>
+
+        <h1>Make a Reservation</h1>
+        <form>
+            <fieldset>
+
+                <legend>Your Information</legend>
+                <label class="top"> First Name* <input type="text" name="fname" required></label>
+                <label class="top"> Last Name* <input type="text" name="lname" required></label>
+                <label class="top"> Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                        required></label>
+                <label class="top"> Phone* <input type="tel" name="phone" placeholder="1235555555" required></label>
+
+                <label class="top">Adventure
+                    <select name="subject">
+
+                        <option value="">Choose Adventure &#9662;</option>
+                        <option value="fishing">Fishing</option>
+                        <option value="kayaking">Kayaking</option>
+                        <option value="rafting">Rafting</option>
+
+                    </select>
+                </label>
+
+                <label class="top">Start Date <input type="date" name="completeDate"></label>
+
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Have any Questions or Comments?</legend>
+
+                <label class="top"><textarea name="comments"
+                        id="addcomments" cols="35" rows="8">
+
+                </textarea></label>
+
+            </fieldset>
+
+            <input type="submit" value="Make Your Reservation Now!" class="submit">
+
+        </form>
 
     </main>
 
