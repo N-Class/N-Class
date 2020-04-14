@@ -208,7 +208,7 @@ main {
 
     #maindv {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         justify-items: center;
 
     }
@@ -222,16 +222,76 @@ main {
         margin: 2%;
         max-width: 15em;
     }
+
+    //applies to activities
+
+    #profiledata {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+    }
+
+    #profiledata h2 {
+        color: $color2;
+    }
+
+    .profiles section {
+        display: block;
+        font-weight: $heavyWeight;
+        background-color: #FFC16D;
+        border: solid 8px #EEA541;
+        padding: 10px;
+        margin: 5%;
+        max-width: 20em;
+    }
+
+    //applies to river guide
+
+
+    iframe {
+        float: right;
+    }
+
+    //applies to contact
+
+    th {
+        background: #BB78FF;
+    }
+
+    th,
+    td {
+        padding: 15px;
+        text-align: center;
+        border: 3px solid #BB78FF;
+        margin: 0;
+        color: black;
+
+    }
+
+    td {
+
+        background-color: rgb(223, 221, 221);
+        width: 25%;
+
+    }
 }
 
 //end of main
-
 
 
 footer {
     background-color: $color1;
     text-align: center;
     padding: 1rem $gutter;
+    position: relative;
+    bottom: -20px;
+}
+
+#con {
+
+    margin-top: 200px;
+
 }
 
 

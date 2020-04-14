@@ -29,31 +29,71 @@ nav li {
 }
 
 main {
-#item1 { grid-area: one; 
-padding-top: 15px;
+    #item1 {
+        grid-area: one;
+        padding-top: 15px;
+    }
+
+    #item2 {
+        grid-area: two;
+        margin-left: 5px;
+        margin-bottom: 0px;
+    }
+
+    #item3 {
+        grid-area: three;
+    }
+
+    #item4 {
+        grid-area: four;
+    }
+
+    #item5 {
+        grid-area: five;
+    }
+
+    #item6 {
+        grid-area: six;
+    }
+
+    #item7 {
+        grid-area: seven;
+    }
+
+    #item8 {
+        grid-area: eight;
+    }
+
+    #container {
+        display: grid;
+        grid-template-areas:
+            'one two two two'
+            'one three four four'
+            'one five six six'
+            'one seven eight eight'
+        ;
+        grid-gap: 0px;
+        padding-bottom: 10px;
+    }
+
+    //applies to home
+
+    #maindv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+
+    }
+
+    //applies to activities
+
+    .profiles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    //applies to river guide
+
+
 }
-#item2 { grid-area: two;
-margin-left: 5px;
-margin-bottom: 0px; }
-#item3 { grid-area: three; }
-#item4 { grid-area: four; }
-#item5 { grid-area: five; }
-#item6 { grid-area: six; }
-#item7 { grid-area: seven; }
-#item8 { grid-area: eight; }
-
-#container {
-  display: grid;
-  grid-template-areas:
-    'one two two two'
-    'one three four four'
-    'one five six six'
-    'one seven eight eight'
-    ;
-  grid-gap: 0px;
-  padding-bottom: 10px;
-}//applies to home
-
-
-}
-

@@ -617,7 +617,7 @@ main #container {
 
 main #maindv {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   justify-items: center;
 }
 
@@ -631,10 +631,58 @@ main .dv {
   max-width: 15em;
 }
 
+main #profiledata {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+main #profiledata h2 {
+  color: #6A35A1;
+}
+
+main .profiles section {
+  display: block;
+  font-weight: 700;
+  background-color: #FFC16D;
+  border: solid 8px #EEA541;
+  padding: 10px;
+  margin: 5%;
+  max-width: 20em;
+}
+
+main iframe {
+  float: right;
+}
+
+main th {
+  background: #BB78FF;
+}
+
+main th,
+main td {
+  padding: 15px;
+  text-align: center;
+  border: 3px solid #BB78FF;
+  margin: 0;
+  color: black;
+}
+
+main td {
+  background-color: #dfdddd;
+  width: 25%;
+}
+
 footer {
   background-color: #8AD73B;
   text-align: center;
   padding: 1rem 10%;
+  position: relative;
+  bottom: -20px;
+}
+
+#con {
+  margin-top: 200px;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -702,6 +750,16 @@ footer {
     grid-gap: 0px;
     padding-bottom: 10px;
   }
+  main #maindv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+  main .profiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
 }
 
 /* end of media query */
@@ -759,6 +817,16 @@ footer {
     grid-template-areas: 'one two two two' 'one three four five' 'one six seven eight';
     grid-gap: 105px;
     padding-bottom: 10px;
+  }
+  main #maindv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+  main .profiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
   }
 }
 
