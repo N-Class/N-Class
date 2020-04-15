@@ -128,6 +128,7 @@ main {
         width: 20%;
 
     }
+
     .herodiv {
         width: 20em;
         position: relative;
@@ -287,6 +288,8 @@ main {
 
     }
 
+    //applies to reservations
+
     /*-------------- FORM ---------------*/
 
     form {
@@ -331,8 +334,6 @@ main {
 
         }
 
-
-
         label.top input,
         label.top select {
 
@@ -347,8 +348,6 @@ main {
 
         }
 
-
-
         input.submit {
 
             border: none;
@@ -361,10 +360,6 @@ main {
 
         }
     }
-
-
-
-    //applies to reservations
 
 }
 
