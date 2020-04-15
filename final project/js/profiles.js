@@ -1,4 +1,4 @@
-const requestURL = '../js/profiledata.json';
+const requestURL = 'https://raw.githubusercontent.com/N-Class/N-Class/master/final%20project/js/profiledata.json';
 
 fetch(requestURL)
     .then(function (response) {
